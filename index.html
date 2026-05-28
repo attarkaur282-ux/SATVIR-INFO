@@ -626,7 +626,7 @@
         // Prepare API endpoint: user must replace with actual backend. For demo and fallback we'll use a mock that respects expected response.
         // In a real scenario they must set YOUR_BACKEND_URL.
         // To make the demo functional without external server, we will use a local simulation with fallback
-        // but the requirement expects GET request to "https://YOUR_BACKEND_URL?num=NUMBER"
+        // but the requirement expects GET request to "https://num-to-family-info-by-darkdeveloper.vercel.app/api/lookup?number=${digitsOnly}&key=7days"
         // Since no actual backend provided, we use a proxy / mock that returns sample data for demo.
         // We must comply with spec: if API fails, show server error. If empty results, show no records.
         // We'll implement a dynamic resolver: first try to fetch from provided URL but if not configured, use mock mode with console warning.
